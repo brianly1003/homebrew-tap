@@ -12,16 +12,16 @@ class Cdev < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/brianly1003/cdev-release/releases/download/v0.1.1/cdev_0.1.1_darwin_amd64.tar.gz"
-      sha256 "d93a1d7e9e7544f1f257ce8c5b2be998aa7866cbfa605a63a44273044a4cf975"
+      url "https://github.com/brianly1003/cdev-releases/releases/download/v0.1.1/cdev_0.1.1_darwin_amd64.tar.gz"
+      sha256 "aff1a4e0fa3be5dae2644e1e6c53108db4bbbfc2f02b17186aef132c7adf3b74"
 
       def install
         bin.install "cdev"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/brianly1003/cdev-release/releases/download/v0.1.1/cdev_0.1.1_darwin_arm64.tar.gz"
-      sha256 "43f584ee2c231f9b31de95aa3c39dde667f080416947de796f8060e9e3fa9915"
+      url "https://github.com/brianly1003/cdev-releases/releases/download/v0.1.1/cdev_0.1.1_darwin_arm64.tar.gz"
+      sha256 "476c8f7f120b1ac365e802f24429f564915c2228287b972d045bf5a8424069db"
 
       def install
         bin.install "cdev"
@@ -31,15 +31,15 @@ class Cdev < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/brianly1003/cdev-release/releases/download/v0.1.1/cdev_0.1.1_linux_amd64.tar.gz"
-      sha256 "26c3430744fa2e3034f5847bb6fb940db2cb5a94e8b7551f9ec673304bf1ec48"
+      url "https://github.com/brianly1003/cdev-releases/releases/download/v0.1.1/cdev_0.1.1_linux_amd64.tar.gz"
+      sha256 "e80192e184dbe25a2f4be347881e3c5a8c940a1651f2b50ffe0fd386bf65f795"
       def install
         bin.install "cdev"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/brianly1003/cdev-release/releases/download/v0.1.1/cdev_0.1.1_linux_arm64.tar.gz"
-      sha256 "d97254b9d53182833442c5eb0f637213e4bcaacda057d056e5525aaf79b9ae88"
+      url "https://github.com/brianly1003/cdev-releases/releases/download/v0.1.1/cdev_0.1.1_linux_arm64.tar.gz"
+      sha256 "2b6f3e3947a163398535c5b68976c908ab831ccf91963f1281142d3942a02167"
       def install
         bin.install "cdev"
       end
