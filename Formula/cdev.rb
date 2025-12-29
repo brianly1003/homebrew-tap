@@ -13,7 +13,7 @@ class Cdev < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/brianly1003/cdev-releases/releases/download/v0.1.1/cdev_0.1.1_darwin_amd64.tar.gz"
-      sha256 "43757ef879fce5450422091d78fe534b8adedfac7108724ec55b4db5ee8bc56b"
+      sha256 "1faa4ebcf38c467b29de87cec25354336c17da6d0795574c04d5b9d29232faca"
 
       def install
         bin.install "cdev"
@@ -21,7 +21,7 @@ class Cdev < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/brianly1003/cdev-releases/releases/download/v0.1.1/cdev_0.1.1_darwin_arm64.tar.gz"
-      sha256 "bddc45ba8a6a1646d61ee14b361bfdafb69d21022e3a9fc37d0fcd77a099a245"
+      sha256 "e9201dd2b63ee38c7f3bd62306f1d3231c1990c586c44708d82c787f0f61674d"
 
       def install
         bin.install "cdev"
@@ -32,14 +32,14 @@ class Cdev < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/brianly1003/cdev-releases/releases/download/v0.1.1/cdev_0.1.1_linux_amd64.tar.gz"
-      sha256 "88a7111c406197f55d2d342f44dfdf5d67d4b27e74e6b149b9ed784f84e2438f"
+      sha256 "20b8626654dee03808d4ad98afdb99e157367bdbe1556bacc37f6bc13d333049"
       def install
         bin.install "cdev"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/brianly1003/cdev-releases/releases/download/v0.1.1/cdev_0.1.1_linux_arm64.tar.gz"
-      sha256 "6f35ac32b6ea8acf6c15ea829d8319dcc5612e532bd937adb6a3801d7fccad27"
+      sha256 "cfcfb010c1b3f7d3600e2ee39c79698227390c53d0fe4bd6cbe6fc1a7c90e2ee"
       def install
         bin.install "cdev"
       end
