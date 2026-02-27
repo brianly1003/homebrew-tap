@@ -5,23 +5,23 @@
 class Cdev < Formula
   desc "AI Coding Agent Server - Remote monitoring and control of AI coding agents from mobile devices"
   homepage "https://github.com/brianly1003/Cdev"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   depends_on "git" => :optional
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/brianly1003/cdev-releases/releases/download/v0.1.2/cdev_0.1.2_darwin_amd64.tar.gz"
-      sha256 "a43aabb62e75cb778d3073140ac45b34e1086af669a4c5d1981dfa379de95a24"
+      url "https://github.com/brianly1003/cdev-releases/releases/download/v0.1.3/cdev_0.1.3_darwin_amd64.tar.gz"
+      sha256 "36c54d89dbf4d0bc1830cfb1b23e14931f615d2e69e71d830421803b6982cc5b"
 
       define_method(:install) do
         bin.install "cdev"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/brianly1003/cdev-releases/releases/download/v0.1.2/cdev_0.1.2_darwin_arm64.tar.gz"
-      sha256 "37815e6e77d12fb15098758efbfe1ace8169d5ffe583cba059d975f92f0154c5"
+      url "https://github.com/brianly1003/cdev-releases/releases/download/v0.1.3/cdev_0.1.3_darwin_arm64.tar.gz"
+      sha256 "6959684625b0ca522d51d527a649bd3efd666c7a5fde171b9190ba3140c269e2"
 
       define_method(:install) do
         bin.install "cdev"
@@ -31,15 +31,15 @@ class Cdev < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/brianly1003/cdev-releases/releases/download/v0.1.2/cdev_0.1.2_linux_amd64.tar.gz"
-      sha256 "1177fb77edd7abd1261571e54e589b2e1efe2c67f9aa14d2ab634a46b0d00950"
+      url "https://github.com/brianly1003/cdev-releases/releases/download/v0.1.3/cdev_0.1.3_linux_amd64.tar.gz"
+      sha256 "3a04089f57158b8bc2bc179aa77f1d25589b0482314fd5ef29fb74e799152aee"
       define_method(:install) do
         bin.install "cdev"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/brianly1003/cdev-releases/releases/download/v0.1.2/cdev_0.1.2_linux_arm64.tar.gz"
-      sha256 "b8523fb330c621e44f8d6b341f3e80f68da2dddc57d63c671360c87945ded6a1"
+      url "https://github.com/brianly1003/cdev-releases/releases/download/v0.1.3/cdev_0.1.3_linux_arm64.tar.gz"
+      sha256 "70d6f943b352ec477f9015492afd51e3f99ed9cd1646a13e68d649398c636024"
       define_method(:install) do
         bin.install "cdev"
       end
